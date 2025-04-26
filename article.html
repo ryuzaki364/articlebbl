@@ -117,27 +117,30 @@ style="font-family: 'Gilroy heavy', sans-serif;">
   </div>
 </div>
 
- <!-- Carousel for Seminar Photos -->
-                    <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-md">
-                        <div id="carousel" class="flex transition-transform duration-500" style="transform: translateX(0);">
-                            <img src="https://bigbrew.com.ph/articles/images/1.jpg" class="min-w-full object-contain" alt="Image 1">
-                            <img src="https://bigbrew.com.ph/articles/images/2.jpg" class="min-w-full object-contain" alt="Image 2">
-                            <img src="https://bigbrew.com.ph/articles/images/3.jpg" class="min-w-full object-contain" alt="Image 3">
-                            <img src="https://bigbrew.com.ph/articles/images/4.jpg" class="min-w-full object-contain" alt="Image 4">
-                            <img src="https://bigbrew.com.ph/articles/images/5.jpg" class="min-w-full object-contain" alt="Image 5">
-                            <img src="https://bigbrew.com.ph/articles/images/6.jpg" class="min-w-full object-contain" alt="Image 6">
-                            <img src="https://bigbrew.com.ph/articles/images/7.jpg" class="min-w-full object-contain" alt="Image 7">
-                            <img src="https://bigbrew.com.ph/articles/images/8.jpg" class="min-w-full object-contain" alt="Image 8">
-                            <img src="https://bigbrew.com.ph/articles/images/9.jpg" class="min-w-full object-contain" alt="Image 9">
-                            <img src="https://bigbrew.com.ph/articles/images/10.jpg" class="min-w-full object-contain" alt="Image 10">
-                            <img src="https://bigbrew.com.ph/articles/images/11.jpg" class="min-w-full object-contain" alt="Image 11">
-                            <img src="https://bigbrew.com.ph/articles/images/12.jpg" class="min-w-full object-contain" alt="Image 12">
-                        </div>
+<!-- Seminar Photos Carousel -->
+<div class="relative w-full max-w-[700px] mx-auto overflow-hidden mt-8">
+  <!-- Carousel Container -->
+  <div id="carouselSlides" class="flex transition-transform duration-500 ease-in-out" style="width: 100%;">
+    <div class="carousel-item w-full h-[400px] flex-shrink-0 rounded-xl">
+      <img src="https://bigbrew.com.ph/articles/images/1.jpg" class="w-full h-full object-cover rounded-xl" alt="Seminar 1">
+    </div>
+    <div class="carousel-item w-full h-[400px] flex-shrink-0 rounded-xl">
+      <img src="https://bigbrew.com.ph/articles/images/2.jpg" class="w-full h-full object-cover rounded-xl" alt="Seminar 2">
+    </div>
+    <div class="carousel-item w-full h-[400px] flex-shrink-0 rounded-xl">
+      <img src="https://bigbrew.com.ph/articles/images/3.jpg" class="w-full h-full object-cover rounded-xl" alt="Seminar 3">
+    </div>
+    <!-- Add more seminar items here... -->
+  </div>
 
-                        <button onclick="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 px-3 py-2 text-gray-800 font-bold rounded-r">‹</button>
-                        <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 px-3 py-2 text-gray-800 font-bold rounded-l">›</button>
-                    </div>
-
+  <!-- Navigation Buttons -->
+  <button id="prevBtn" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 text-[#3a280f] p-2 rounded-full shadow-md">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button id="nextBtn" class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 text-[#3a280f] p-2 rounded-full shadow-md">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
 
 <script>
   const carousel = document.getElementById('carouselSlides');
@@ -149,7 +152,6 @@ style="font-family: 'Gilroy heavy', sans-serif;">
 
   // Function to update the carousel position (sliding effect)
   function updateCarousel() {
-    // Translate the slides to the left to show the next image
     carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
 
@@ -167,6 +169,7 @@ style="font-family: 'Gilroy heavy', sans-serif;">
   // Initial update on page load
   updateCarousel();
 </script>
+
 <br>
  <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-6"
  style="font-family: 'Gilroy regular', sans-serif;">
