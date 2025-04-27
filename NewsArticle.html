@@ -87,7 +87,7 @@
   
   <!-- Highlight News (Featured Article) -->
   <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-16">
-    <div class="relative w-full h-64 sm:h-80 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
+    <div class="relative w-full h-full sm:h-80 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
       <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/493160937_972609474923029_5565498689960911616_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH-CGkFkMwFC839umXCJgc4vv33eFDf1XW-_fd4UN_VdcGP-Vvc5GazXNz-XEGH-_NrfXI01eTkeCxTRt0fA47T&_nc_ohc=go5Dgoq-GbYQ7kNvwEEv6Ds&_nc_oc=Adk9XYY03XwABWSwckmqpYvezPXWNSFMQdFvE8vtqRupdZ09Sy9vk3PRBOTbs0FXCM8&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=8g6Hpt4E34WeP8hVcpTI_Q&oh=00_AfHSGL2y2b3YZ2shri7q0lZzOpf9WFTQ-BqsBfVBAsZCrA&oe=68135208" 
         alt="Highlight Article" 
         class="absolute inset-0 w-full h-full object-cover">
@@ -111,10 +111,13 @@
 
   <!-- Additional Articles -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-    <div class="flex flex-col h-64 sm:h-80 lg:h-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
-      <img src="/articlebbl/images/lolo.jpg" alt="Article 1" class="w-full h-1/2 object-cover">
-      <div class="flex flex-col justify-between flex-grow p-6">
+
+    <!-- Article 1 -->
+    <div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="relative w-full h-48 sm:h-56 lg:h-64">
+        <img src="/articlebbl/images/lolo.jpg" alt="Article 1" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col justify-between p-6 flex-grow">
         <p class="font-bold text-xl" style="font-family: 'Gilroy semibold', sans-serif;">Brewing Success: How BigBrew Elevates Its Franchise Network Through Training & Seminars and Customer-Centric Approach</p>
         <a href="https://ryuzaki364.github.io/articlebbl/Brewing-Success-How-BigBrew-Elevates-Its-Franchise-Network-Through-Training-Seminars-and-Customer-Centric-Approach.html" 
            class="mt-4 inline-block text-amber-600 hover:text-amber-800 font-semibold" 
@@ -122,9 +125,12 @@
       </div>
     </div>
 
-    <div class="flex flex-col h-64 sm:h-80 lg:h-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
-      <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/493141731_1586987808655022_3158711169200508631_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHx1ms_lrUs2Sj1dF-j_7SwkfNEycx1NumR80TJzHU26SSuP53n2oTKRpmelwRyMZfWzaG6qj8GIP0O7zmStrMq&_nc_ohc=QGy9L76zZsUQ7kNvwHIUuk0&_nc_oc=AdmWmdQ1RWwuTxx42pQ3564p54hxBRPLyFqLmKN2hIQGLDC_jUThcfn0PLGQP209t1M&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=Fgwih6aSsHZfDcz0wcONdA&oh=00_AfFYIrOSvI3YoY7eT_BNPmIg5t7fYaTajcjauf1ndiE54Q&oe=681371ED" alt="Article 2" class="w-full h-1/2 object-cover">
-      <div class="flex flex-col justify-between flex-grow p-6">
+    <!-- Article 2 -->
+    <div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="relative w-full h-48 sm:h-56 lg:h-64">
+        <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/493141731_1586987808655022_3158711169200508631_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHx1ms_lrUs2Sj1dF-j_7SwkfNEycx1NumR80TJzHU26SSuP53n2oTKRpmelwRyMZfWzaG6qj8GIP0O7zmStrMq&_nc_ohc=QGy9L76zZsUQ7kNvwHIUuk0&_nc_oc=AdmWmdQ1RWwuTxx42pQ3564p54hxBRPLyFqLmKN2hIQGLDC_jUThcfn0PLGQP209t1M&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=Fgwih6aSsHZfDcz0wcONdA&oh=00_AfFYIrOSvI3YoY7eT_BNPmIg5t7fYaTajcjauf1ndiE54Q&oe=681371ED" alt="Article 2" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col justify-between p-6 flex-grow">
         <p class="font-bold text-xl" style="font-family: 'Gilroy semibold', sans-serif;">BEST BOOTH Award: International Franchise Expo 2025</p>
         <a href="https://www.facebook.com/photo?fbid=1586987801988356&set=a.154737258546758" 
            class="mt-4 inline-block text-amber-600 hover:text-amber-800 font-semibold" 
@@ -135,7 +141,6 @@
   </div>
 </section>
 <!-- ===================== END OF ARTICLES ===================== -->
-
 
 
 
