@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BigBrew | Brewing Success</title>
-	
-  <!-- Tailwind CSS -->
+  <title>BigBrew's Rising Influence in Bulacan: Addressing Issues and Feedback by an Innovation-driven CEO</title>
+
+  <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-	
- <!-- Font Awesome -->	
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
-  <!-- Gilroy Font -->
- <link href="https://ryuzaki364.github.io/articlebbl/css/gilroyfont.css" rel="stylesheet">
-	
-  
+
+
+ <!-- Gilroy Font -->
+ <link href="/articlebbl/css/gilroyfont.css" rel="stylesheet">
+ 
 </head>
+
 <body class="bg-[#f2eddb]">
 
   <!-- Navbar -->
   <nav class="bg-[#3a280f] text-white shadow-lg fixed w-full z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
         <a href="/" class="flex items-center">
-          <img src="/articlebbl/images/logo.png" alt="My Logo" class="h-8 sm:h-10 mr-2">
+          <img src="/page/images/logo.png" alt="My Logo" class="h-8 sm:h-10 mr-2">
         </a>
+
+        <!-- Desktop Navigation Links -->
         <div class="hidden md:flex space-x-6">
-          <a href="/" class="text-white hover:text-amber-600" style="font-family: 'Gilroy heavy', sans-serif;">Home</a>
-          <a href="/products" class="text-white hover:text-amber-600" style="font-family: 'Gilroy heavy', sans-serif;">Products</a>
-          <a href="/franchisee" class="text-white hover:text-amber-600" style="font-family: 'Gilroy heavy', sans-serif;">Be a Franchisee</a>
-          <a href="/contact" class="text-white hover:text-amber-600" style="font-family: 'Gilroy heavy', sans-serif;">Contact Us</a>
+          <a href="/" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Home</a>
+          <a href="/products" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Products</a>
+          <a href="/franchisee" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Be a Franchisee</a>
+          <a href="/contact" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Contact Us</a>
         </div>
+
+        <!-- Mobile Menu Button -->
         <button class="md:hidden mobile-menu-button">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -42,8 +46,7 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div
-    class="mobile-menu overflow-hidden bg-[#3a280f] text-white shadow-lg fixed top-16 left-0 w-full z-40 max-h-0 transition-all duration-500 ease-in-out">
+  <div class="mobile-menu overflow-hidden bg-[#3a280f] text-white shadow-lg fixed top-16 left-0 w-full z-40 max-h-0 transition-all duration-500 ease-in-out">
     <div class="p-4">
       <nav class="flex flex-col space-y-4">
         <a href="/" class="text-xl hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Home</a>
@@ -53,6 +56,9 @@
       </nav>
     </div>
   </div>
+  
+   <!-- MOBILE MENU -->
+ <script src="/articlebbl/js/mobile-menu.js"></script>
 
   <!-- ===================== ARTICLE SECTION ===================== -->
 <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
@@ -136,34 +142,10 @@ style="font-family: 'Gilroy heavy', sans-serif;">
     <i class="fas fa-chevron-right"></i>
   </button>
 </div>
+	    
+<!-- Carousel next and prev -->	    
+<script src="/articlebbl/js/carousel.js"></script>
 
-<script>
-  const carousel = document.getElementById('carouselSlides');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const slides = document.querySelectorAll('.carousel-item');
-  const slideCount = slides.length;
-  let currentSlide = 0;
-
-  // Function to update the carousel position (sliding effect)
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }
-
-  // Prev and Next button actions
-  prevBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-    updateCarousel();
-  });
-
-  nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slideCount;
-    updateCarousel();
-  });
-
-  // Initial update on page load
-  updateCarousel();
-</script>
 
 <br>
  <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-6"
