@@ -59,55 +59,61 @@
     <!-- Mobile menu button -->
  <script src="https://ryuzaki364.github.io/articlebbl/js/mobile-menu.js"></script>	
  
-<!-- Video/Image Background Section -->
-<section class="menu-hero-section relative flex items-center justify-center bg-cover bg-center">
-    <!-- Video Background -->
-    <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/494013743_972110208306289_2135698339873702021_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHx5DWrN1MZ6bJmDORCntvSAercj3WS0koB6tyPdZLSSiiHGteMMeIUXpYd9j-9NMGxH8THOjcCzuWuQcSfRyUR&_nc_ohc=x9XQHD1sqHMQ7kNvwH7HVHG&_nc_oc=AdlrFn6N73XROlPouXaMhdyInNkQPfGxs9a5b2I3v7eqIjrAuTeqKCN77ApT7o40e8Q&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=DB0DOkICehvlftz4tvjfRg&oh=00_AfG-QaVxUad2LFz6G0FtX62tYKq7gXymegtic1lOzA9yfg&oe=68136987" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
-    <!-- Overlay -->
-     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65 rounded-lg"></div>
+<!-- AOS CSS (Make sure once lang ito in-include sa page) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- Title Content -->
-    <div class="relative z-10 text-center px-6">
-	    <br>
-		<br>
-		<br>
-		<br>
-		<br>
-        <h1 class="menu-title text-white text-6xl font-semibold drop-shadow-2xl text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);"  style="font-family: 'Gilroy heavy', sans-serif; font-size: 40px;">What's New?</h1>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-    </div>
+<section class="menu-hero-section relative flex items-center justify-center bg-cover bg-center py-24" data-aos="fade-in">
+  <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/494012278_972110088306301_3493058873239411702_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG4Og7zVAfNedEyx1yQpk7-zt1s-uvKQODO3Wz668pA4ON8X_mQhlXA6Dw0x8NzI8oRmkkwh7WjXZhnZHEUi0yz&_nc_ohc=G4d-HI_01hgQ7kNvwF_7yK4&_nc_oc=Adk3ENKmQ5pDYuVFcGAc20BCcGrn7kFwAAN9w655_Fjk_eDDbNHqYdClktscNa3yoYs&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=gGIEt1vlBq0errBgVvMl6w&oh=00_AfGTQmUWakJtviigEORkYbE2s_8ZM7xOl_zrv_P88poUPw&oe=68149A15" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+  
+  <!-- Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65 rounded-lg"></div>
+  <!-- Title Content -->
+ <div class="relative z-10 text-center px-6 pt-16">
+  <h1 class="menu-title text-white font-semibold drop-shadow-2xl" 
+      style="font-family: 'Gilroy heavy', sans-serif; font-size: 40px;">
+    What's New?
+  </h1>
+</div>
 </section>
 
+
+<!-- AOS JS (Make sure once lang din ito in-include sa page) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
 <!-- ===================== ARTICLES ===================== -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 pt-32">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 pt-10">
   
   <!-- Highlight News (Featured Article) -->
-  <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-16">
-    <div class="relative w-full h-full sm:h-80 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
-      <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/493160937_972609474923029_5565498689960911616_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH-CGkFkMwFC839umXCJgc4vv33eFDf1XW-_fd4UN_VdcGP-Vvc5GazXNz-XEGH-_NrfXI01eTkeCxTRt0fA47T&_nc_ohc=go5Dgoq-GbYQ7kNvwEEv6Ds&_nc_oc=Adk9XYY03XwABWSwckmqpYvezPXWNSFMQdFvE8vtqRupdZ09Sy9vk3PRBOTbs0FXCM8&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=8g6Hpt4E34WeP8hVcpTI_Q&oh=00_AfHSGL2y2b3YZ2shri7q0lZzOpf9WFTQ-BqsBfVBAsZCrA&oe=68135208" 
-        alt="Highlight Article" 
-        class="absolute inset-0 w-full h-full object-cover">
+ <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-16 pt-50">
+  <div class="relative w-full h-48 sm:h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
+    <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/493160937_972609474923029_5565498689960911616_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH-CGkFkMwFC839umXCJgc4vv33eFDf1XW-_fd4UN_VdcGP-Vvc5GazXNz-XEGH-_NrfXI01eTkeCxTRt0fA47T&_nc_ohc=go5Dgoq-GbYQ7kNvwEEv6Ds&_nc_oc=Adk9XYY03XwABWSwckmqpYvezPXWNSFMQdFvE8vtqRupdZ09Sy9vk3PRBOTbs0FXCM8&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=8g6Hpt4E34WeP8hVcpTI_Q&oh=00_AfHSGL2y2b3YZ2shri7q0lZzOpf9WFTQ-BqsBfVBAsZCrA&oe=68135208" 
+      alt="Highlight Article" 
+      class="absolute inset-0 w-full h-full object-cover">
 
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      <!-- Text Content -->
-      <div class="relative z-10 flex flex-col justify-end h-full p-6 sm:p-8 text-white">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 leading-tight" style="font-family: 'Gilroy semibold', sans-serif;">
-          BigBrew's Rising Influence in Bulacan: Addressing Issues and Feedback by an Innovation-driven CEO
-        </h2>
-        <a href="https://ryuzaki364.github.io/articlebbl/BigBrews-Rising-Influence-in-Bulacan-Addressing-Issues-and-Feedback-by-an-Innovation-driven-CEO.html" 
-           class="inline-block text-amber-400 hover:text-amber-500 font-semibold text-base sm:text-lg" 
-           style="font-family: 'Gilroy semibold', sans-serif;">
-          Read More
-        </a>
-      </div>
+    <!-- Text Content -->
+    <div class="relative z-10 flex flex-col justify-end h-full p-6 sm:p-8 text-white">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 leading-tight" style="font-family: 'Gilroy semibold', sans-serif;">
+        BigBrew's Rising Influence in Bulacan: Addressing Issues and Feedback by an Innovation-driven CEO
+      </h2>
+      <a href="https://ryuzaki364.github.io/articlebbl/BigBrews-Rising-Influence-in-Bulacan-Addressing-Issues-and-Feedback-by-an-Innovation-driven-CEO.html" 
+         class="inline-block text-amber-400 hover:text-amber-500 font-semibold text-base sm:text-lg" 
+         style="font-family: 'Gilroy semibold', sans-serif;">
+        Read More
+      </a>
     </div>
   </div>
+</div>
+
 
   <!-- Additional Articles -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
