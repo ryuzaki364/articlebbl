@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opportunities</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Gilroy Font -->
+  <link href="/articlebbl/css/gilroyfont.css" rel="stylesheet">
+  
+ <!-- AOS CSS (Make sure once lang ito in-include sa page) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+
+
+
+<body class="bg-[#f2eddb]" style="background-image: url('/page/images/bg.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+
+<!-- AOS JS (Make sure once lang din ito in-include sa page) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+  <!-- Navbar -->
+  <nav class="bg-[#3a280f] text-white shadow-lg fixed w-full z-50 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+          <img src="/articlebbl/images/logo.png" alt="My Logo" class="h-8 sm:h-10 mr-2">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="/" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Home</a>
+          <a href="/products" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Products</a>
+          <a href="/franchisee" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Be a Franchisee</a>
+          <a href="/contact" class="text-white hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Contact Us</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu overflow-hidden bg-[#3a280f] text-white shadow-lg fixed top-16 left-0 w-full z-40 max-h-0 transition-all duration-500 ease-in-out">
+    <div class="p-4">
+      <nav class="flex flex-col space-y-4">
+        <a href="/" class="text-xl hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Home</a>
+        <a href="/products" class="text-xl hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Products</a>
+        <a href="/franchisee" class="text-xl hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Be a Franchisee</a>
+        <a href="/contact" class="text-xl hover:text-amber-600" style="font-family: 'Gilroy Heavy', sans-serif;">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+  
+
+
+
+
+
+<!-- Include Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<section class="relative w-full h-[400px] overflow-hidden">
+  <!-- Swiper Container -->
+  <div class="swiper-container w-full h-full">
+    <div class="swiper-wrapper">
+      <div
+        class="swiper-slide bg-cover bg-center w-full h-full"
+        style="background-image: url('/articlebbl/images/cover1.png');"
+      ></div>
+      <div
+        class="swiper-slide bg-cover bg-center w-full h-full"
+        style="background-image: url('/articlebbl/images/cover2.png');"
+      ></div>
+      <div
+        class="swiper-slide bg-cover bg-center w-full h-full"
+        style="background-image: url('/articlebbl/images/cover3.png');"
+      ></div>
+    </div>
+
+    <!-- Prev/Next Buttons -->
+    <div class="swiper-button-prev" style="z-index: 50;"></div>
+    <div class="swiper-button-next" style="z-index: 50;"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination" style="z-index: 50;"></div>
+  </div>
+
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0"
+    style="background-color: rgba(0, 0, 0, 0.5); z-index: 30; pointer-events: none;"
+  ></div>
+
+  <!-- Title -->
+  <div
+    class="absolute inset-0 flex items-center justify-center text-center"
+    style="z-index: 40;"
+  >
+    <h1
+      class="text-[#f2eddb] text-[40px] font-semibold drop-shadow-2xl animate-fade-in"
+      style="font-family: 'Gilroy heavy', sans-serif;"
+    >
+      Careers
+    </h1>
+  </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".swiper-container", {
+    loop: true,
+    effect: "fade",
+    speed: 1000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<!-- Animation Style -->
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+</style>
+
+
+
+
+</section>
+
+
+
+
+<!-- ===================== CAREER CONTENT ===================== -->
+<section class="relative z-10 py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- LEFT: Heading -->
+    <div>
+  <h2 class="text-[#3a280f] font-bold leading-tight" style="font-family: 'Gilroy Heavy', sans-serif;">
+    <span class="block text-4xl md:text-5xl lg:text-[75px]">Brew Ideas.</span>
+    <span class="block text-4xl md:text-5xl lg:text-[75px]">Build a Career.</span>
+  </h2>
+</div>
+    
+    <!-- RIGHT: Description with custom dots -->
+    <div class="space-y-6">
+      <div class="flex items-start space-x-4">
+        <div class="w-2.5 h-2.5 mt-2 rounded-full bg-[#3a280f] flex-shrink-0"></div>
+        <p class="text-lg text-[#3a280f]/80" style="font-family: 'Gilroy medium', sans-serif;">
+          BigBrew is growing fast — and we’re looking for passionate individuals who want to help shape the future of food and beverage innovation.
+        </p>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="w-2.5 h-2.5 mt-2 rounded-full bg-[#3a280f] flex-shrink-0"></div>
+        <p class="text-lg text-[#3a280f]/80" style="font-family: 'Gilroy medium', sans-serif;">
+          Join our main office team and bring your skills in operations, marketing, design, finance, and more.
+        </p>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="w-2.5 h-2.5 mt-2 rounded-full bg-[#3a280f] flex-shrink-0"></div>
+        <p class="text-lg text-[#3a280f]/80" style="font-family: 'Gilroy medium', sans-serif;">
+          If you’re ready to work with purpose (and have fun along the way), you might just be what we're brewing next.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== FULL-WIDTH BOXED SECTION (with smaller image) ===================== -->
+<section class="w-full bg-[#FFEAB7] py-20 px-6" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT: Image (smaller frame) -->
+    <div class="max-w-md mx-auto w-full">
+      <img src="/articlebbl/images/original.png" alt="BigBrew Office" class="w-full h-auto rounded-xl object-cover">
+    </div>
+
+    <!-- RIGHT: Text Content -->
+    <div>
+      <h2 class="text-[#3a280f] text-3xl md:text-4xl font-bold leading-tight mb-4" style="font-family: 'Gilroy Heavy', sans-serif;">
+        Build Big Things with BigBrew
+      </h2>
+      <p class="text-lg text-[#3a280f]/80 mb-4" style="font-family: 'Gilroy Medium', sans-serif;">
+        At BigBrew Main Office, we’re all about smart ideas, smooth processes, and passionate people.
+      </p>
+      <p class="text-lg text-[#3a280f]/80" style="font-family: 'Gilroy Medium', sans-serif;">
+        Our hiring flow is simple, structured, and made for professionals ready to grow with us.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-[#593c17] text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="/page/images/logo.png" alt="BigBrew Logo" class="h-10">
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 mt-6 lg:mt-0">
+        <a href="#" class="hover:underline" style="font-family: 'Gilroy Heavy', sans-serif;">Home</a>
+        <a href="/products" class="hover:underline" style="font-family: 'Gilroy Heavy', sans-serif;">Our Products</a>
+        <a href="/franchisee" class="hover:underline" style="font-family: 'Gilroy Heavy', sans-serif;">Be A Franchisee</a>
+        <a href="/contact" class="hover:underline" style="font-family: 'Gilroy Heavy', sans-serif;">Contact Us</a>
+      </div>
+
+      <div class="flex space-x-4 mt-6 lg:mt-0">
+        <a href="https://www.facebook.com/bigbrew.main" aria-label="Facebook" class="hover:text-gray-300">
+          <img src="/page/images/facebook.png" alt="Facebook" class="h-6" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://www.instagram.com/bigbrew.main" aria-label="Instagram" class="hover:text-gray-300">
+          <img src="/page/images/instagram.png" alt="Instagram" class="h-6" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://www.tiktok.com/@bigbrewmain" aria-label="Tiktok" class="hover:text-gray-300">
+          <img src="/page/images/tiktok.png" alt="Tiktok" class="h-6" style="filter: brightness(0) invert(1);">
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center text-sm text-gray-300 mt-8">
+      <p style="font-family: 'Gilroy regular', sans-serif; font-size: 17px;">©2025 All Rights Reserved. Bigbrew Food and Beverages Inc.</p>
+    </div>
+  </footer>
+
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-724E4M3979"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-724E4M3979');
+  </script>
+</body>
+</html>
